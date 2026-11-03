@@ -1,6 +1,11 @@
 MIT License
 
-Copyright (c) 2026 thekoenrutten
+Copyright (c) 2026 Koen Rutten
+
+This licence applies to the software in this repository: the firmware in firmware/ and the
+Python scripts in cad/. The hardware design files (CAD models, STL/STEP files and the build
+documentation) are licensed under CERN-OHL-P-2.0, see LICENSE-HARDWARE.
+cad/third_party/lilygo/ contains a file from Xinyuan-LilyGO under its own MIT licence.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
