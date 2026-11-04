@@ -6,6 +6,13 @@ a LilyGO T-Motor board (ESP32 + TMC2209) and three buttons you can find by feel 
 Power comes from any USB-C PD power bank. Everything sits in one housing on the original dovetail clamp,
 and the original MD-5sp motor stays untouched.
 
+| Front: belt from the motor to the worm shaft | Back: the three buttons and the USB-C power input |
+|---|---|
+| ![Drive on the mount, seen from the pulley side](docs/img/mounted_front.jpg) | ![Drive on the mount, seen from the back](docs/img/mounted_back.jpg) |
+
+*Test print in black PLA Matte, with the push pins printed in green. The version label on the back plate in the photo
+belongs to the previous revision; the final STL files carry no text.*
+
 | | |
 |---|---|
 | Tracking | sidereal, silent (StealthChop, 1/256 microstepping) |
