@@ -13,6 +13,30 @@ and the original MD-5sp motor stays untouched.
 *Test print in black PLA Matte, with the push pins printed in green. The version label on the back plate in the photo
 belongs to the previous revision; the final STL files carry no text.*
 
+## Why this project
+
+The Vixen Super Polaris is a great classic mount: mechanically sound and sturdy, and a pleasure for visual observing.
+What bothered me was its motor drive. The MD-5 hand controller is clumsy to use, and it needs extra cables
+and its own power: an expensive 9 V block battery or a bulky holder with six AA cells.
+
+This is an integrated replacement that runs straight from a USB power bank. **One cable** goes from the power bank
+to the mount, and **three simple buttons** on the drive itself control it. There is no hand controller hanging off the
+mount and no battery pack to keep charged. The **original slip clutch still works as before**: loosen the thumbscrew
+and you can swing the telescope by hand, tighten it and the drive takes over.
+
+A few other choices follow from the same idea:
+
+- **Made for the dark.** The buttons have raised arrow and round shapes you can find by feel, and the black housing
+  keeps the power indicator LED inside.
+- **Reversible.** Nothing on the mount is drilled or modified. The printed pulley takes the place of the brass gear in the
+  clutch, and the housing uses the existing dovetail clamp. The brass gear and the MD-5sp motor are kept unchanged.
+- **Long battery life.** The whole drive uses roughly 2 W while tracking, so an ordinary 10 000 mAh power bank
+  should last well over a night (estimate, not yet measured).
+- **Quiet and smooth.** The TMC2209 driver runs silently in StealthChop at 1/256 microstepping.
+- **Easy to update.** New firmware goes on over WiFi without opening the housing.
+- **Cheap, off-the-shelf parts.** A LilyGO T-Motor board, a standard NEMA 17, a GT2 belt and a PD trigger board;
+  the rest is printed.
+
 | | |
 |---|---|
 | Tracking | sidereal, silent (StealthChop, 1/256 microstepping) |
