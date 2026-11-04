@@ -15,6 +15,8 @@ belongs to the previous revision; the final STL files carry no text.*
 
 ## Why this project
 
+<img src="docs/img/mount_overview.jpg" alt="Vixen Super Polaris with the drive fitted and a power bank on the tripod tray" width="340" align="right">
+
 The Vixen Super Polaris is a great classic mount: mechanically sound and sturdy, and a pleasure for visual observing.
 What bothered me was its motor drive. The MD-5 hand controller is clumsy to use, and it needs extra cables
 and its own power: an expensive 9 V block battery or a bulky holder with six AA cells.
@@ -23,6 +25,7 @@ This is an integrated replacement that runs straight from a USB power bank. **On
 to the mount, and **three simple buttons** on the drive itself control it. There is no hand controller hanging off the
 mount and no battery pack to keep charged. The **original slip clutch still works as before**: loosen the thumbscrew
 and you can swing the telescope by hand, tighten it and the drive takes over.
+The photo shows the whole setup: the drive on the RA axis and the power bank on the tripod tray, with a single cable between them.
 
 A few other choices follow from the same idea:
 
