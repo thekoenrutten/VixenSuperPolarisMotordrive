@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1040" viewBox="0 0 1640 1040" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1d2330">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker>
+  <g id="gnd"><line x1="0" y1="0" x2="0" y2="10" stroke="#1d2330" stroke-width="2"/><line x1="-10" y1="10" x2="10" y2="10" stroke="#1d2330" stroke-width="2"/><line x1="-6" y1="15" x2="6" y2="15" stroke="#1d2330" stroke-width="2"/><line x1="-2" y1="20" x2="2" y2="20" stroke="#1d2330" stroke-width="2"/></g>
+  <g id="sw"><line x1="0" y1="0" x2="0" y2="14" stroke="#1d2330" stroke-width="2"/><circle cx="0" cy="17" r="3" fill="#fff" stroke="#1d2330" stroke-width="2"/><line x1="2" y1="19" x2="14" y2="40" stroke="#1d2330" stroke-width="2"/><circle cx="0" cy="43" r="3" fill="#fff" stroke="#1d2330" stroke-width="2"/><line x1="0" y1="46" x2="0" y2="56" stroke="#1d2330" stroke-width="2"/><use href="#gnd" y="56"/></g>
+</defs>
+<rect width="1640" height="1040" fill="#fff"/>
+<text x="40" y="52" font-size="30" font-weight="650">Vixen SP RA drive — wiring</text>
+<text x="40" y="80" font-size="16" fill="#5a6272">Everything except the PD trigger cable is already on the LilyGO T-Motor board. Red = +9 V, black = GND (drawing colours; check polarity with a meter).</text>
+
+<!-- power bank -->
+<rect x="40" y="130" width="170" height="110" rx="10" fill="#eef1f5" stroke="#1d2330" stroke-width="2"/>
+<text x="125" y="172" text-anchor="middle" font-weight="650" font-size="17">USB-C PD</text>
+<text x="125" y="194" text-anchor="middle" font-weight="650" font-size="17">power bank</text>
+<text x="125" y="218" text-anchor="middle" fill="#5a6272">must offer 9 V</text>
+<line x1="210" y1="185" x2="300" y2="185" stroke="#1d2330" stroke-width="5"/>
+<text x="255" y="174" text-anchor="middle" font-size="13" fill="#5a6272">USB-C cable</text>
+
+<!-- PD trigger -->
+<rect x="300" y="110" width="230" height="170" rx="10" fill="#eef1f5" stroke="#1d2330" stroke-width="2"/>
+<text x="415" y="140" text-anchor="middle" font-weight="650" font-size="17">USB-C PD trigger</text>
+<text x="415" y="162" text-anchor="middle" fill="#5a6272" font-size="14">TinyTronics 006497</text>
+<text x="315" y="196" font-size="14">pads <tspan font-weight="650">9V</tspan> + <tspan font-weight="650">PD ONLY</tspan> bridged</text>
+<text x="315" y="218" font-size="14">screw terminal removed</text>
+<text x="315" y="240" font-size="14">LED on = 9 V present</text>
+<text x="512" y="164" text-anchor="end" font-weight="700" fill="#c0392b">+</text>
+<text x="512" y="262" text-anchor="end" font-weight="700">−</text>
+<circle cx="530" cy="160" r="4" fill="#c0392b"/><circle cx="530" cy="258" r="4" fill="#1d2330"/>
+
+<!-- cable to P1 -->
+<path d="M530,160 H600 V150 H690" fill="none" stroke="#c0392b" stroke-width="4"/>
+<path d="M530,258 H620 V176 H690" fill="none" stroke="#1d2330" stroke-width="4"/>
+<rect x="548" y="306" width="140" height="62" rx="6" fill="#fff8e6" stroke="#d4a72c"/>
+<text x="618" y="328" text-anchor="middle" font-size="13">P1 cable supplied</text>
+<text x="618" y="344" text-anchor="middle" font-size="13">with the T-Motor, cut</text>
+<text x="618" y="360" text-anchor="middle" font-size="13">and soldered on</text>
+<!-- unused P1 wires -->
+<g stroke="#9aa3b0" stroke-width="2.5">
+  <line x1="650" y1="202" x2="690" y2="202"/><line x1="650" y1="228" x2="690" y2="228"/><line x1="650" y1="254" x2="690" y2="254"/><line x1="650" y1="280" x2="690" y2="280"/>
+</g>
+<g fill="#9aa3b0"><rect x="642" y="197" width="8" height="10"/><rect x="642" y="223" width="8" height="10"/><rect x="642" y="249" width="8" height="10"/><rect x="642" y="275" width="8" height="10"/></g>
+<text x="560" y="390" font-size="13" fill="#5a6272">wires 3–6 not used:</text>
+<text x="560" y="406" font-size="13" fill="#5a6272">cut short and insulate</text>
+
+<!-- T-Motor board -->
+<rect x="710" y="105" width="660" height="690" rx="14" fill="#f4f8f5" stroke="#2f7d4f" stroke-width="2.5"/>
+<text x="728" y="784" font-weight="650" font-size="18" fill="#2f7d4f">LilyGO TTGO T-Motor</text>
+
+<!-- P1 connector -->
+<rect x="690" y="132" width="95" height="164" rx="4" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="737" y="126" text-anchor="middle" font-weight="650" font-size="14">P1</text>
+<g font-size="12">
+<text x="697" y="154">1 +VM</text><text x="697" y="180">2 GND</text><text x="697" y="206" fill="#9aa3b0">3 COM</text>
+<text x="697" y="232" fill="#9aa3b0">4 OUT_ENA</text><text x="697" y="258" fill="#9aa3b0">5 OUT_STEP</text><text x="697" y="284" fill="#9aa3b0">6 OUT_DIR</text>
+</g>
+<!-- VM rail -->
+<path d="M785,150 H805 V122 H1215 V290" fill="none" stroke="#c0392b" stroke-width="3"/>
+<text x="1010" y="142" font-size="13" fill="#c0392b">VM 9 V</text>
+<path d="M785,176 H815" stroke="#1d2330" stroke-width="2.5"/><use href="#gnd" x="815" y="176"/>
+
+<!-- buck -->
+<path d="M900,122 V168" stroke="#c0392b" stroke-width="3"/>
+<rect x="840" y="168" width="140" height="56" rx="6" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="910" y="192" text-anchor="middle" font-weight="650">buck</text>
+<text x="910" y="212" text-anchor="middle" font-size="13">VM → 3.3 V</text>
+<path d="M910,224 V270" stroke="#2c6fbb" stroke-width="3"/>
+<path d="M980,196 H1150 V290" fill="none" stroke="#2c6fbb" stroke-width="2.5"/>
+<text x="1002" y="188" font-size="13" fill="#2c6fbb">3.3 V → VIO, pull-ups</text>
+
+<!-- ESP32 -->
+<rect x="800" y="270" width="230" height="350" rx="8" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="915" y="300" text-anchor="middle" font-weight="650" font-size="17">ESP32-PICO-D4</text>
+<text x="915" y="320" text-anchor="middle" font-size="13" fill="#5a6272">firmware vixen_sp_ra.ino</text>
+<g font-size="14" text-anchor="end">
+<text x="1022" y="355">GPIO23</text><text x="1022" y="385">GPIO18</text><text x="1022" y="415">GPIO2</text>
+<text x="1022" y="445">GPIO27</text><text x="1022" y="475">GPIO26</text><text x="1022" y="505">GPIO4</text><text x="1022" y="535">GPIO19</text>
+</g>
+<g font-size="13" text-anchor="middle"><text x="850" y="610">GPIO36</text><text x="925" y="610">GPIO34</text><text x="1000" y="610">GPIO35</text></g>
+
+<!-- TMC2209 -->
+<rect x="1150" y="290" width="150" height="290" rx="8" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="1225" y="318" text-anchor="middle" font-weight="650" font-size="17">TMC2209</text>
+<g font-size="14"><text x="1158" y="355">STEP</text><text x="1158" y="385">DIR</text><text x="1158" y="415">EN</text>
+<text x="1158" y="460">PDN_UART</text><text x="1158" y="505">SPREAD</text><text x="1158" y="535">CLK</text></g>
+<text x="1225" y="562" text-anchor="middle" font-size="12" fill="#5a6272">MS1 = MS2 = 1 → addr 3</text>
+<g font-size="13" text-anchor="end"><text x="1294" y="378">A1</text><text x="1294" y="408">A2</text><text x="1294" y="438">B1</text><text x="1294" y="468">B2</text></g>
+<text x="1202" y="286" font-size="12" fill="#c0392b" text-anchor="end">VM</text>
+<text x="1144" y="286" font-size="12" fill="#2c6fbb" text-anchor="end">VIO</text>
+
+<!-- ESP32 -> TMC -->
+<g stroke="#1d2330" stroke-width="2" fill="none">
+<path d="M1030,350 H1150"/><path d="M1030,380 H1150"/><path d="M1030,410 H1150"/>
+<path d="M1030,440 H1052"/><rect x="1052" y="433" width="36" height="14" fill="#fff"/><path d="M1088,440 H1110 V455 H1150"/>
+<path d="M1030,470 H1110 V455"/>
+<path d="M1030,500 H1150"/><path d="M1030,530 H1150"/>
+</g>
+<circle cx="1110" cy="455" r="4" fill="#1d2330"/>
+<text x="1070" y="428" text-anchor="middle" font-size="12">1 kΩ</text>
+<g font-size="12" fill="#5a6272"><text x="1040" y="345">STEP</text><text x="1040" y="375">DIR</text><text x="1040" y="405">EN (low = on)</text>
+<text x="1040" y="466">RX</text><text x="1040" y="496">low</text><text x="1040" y="526">low</text></g>
+
+<!-- motor JST + motor -->
+<rect x="1348" y="352" width="44" height="130" rx="4" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="1370" y="345" text-anchor="middle" font-weight="650" font-size="13">motor JST</text>
+<g stroke="#1d2330" stroke-width="2"><path d="M1300,373 H1348"/><path d="M1300,403 H1348"/><path d="M1300,433 H1348"/><path d="M1300,463 H1348"/></g>
+<g font-size="12" text-anchor="middle"><text x="1370" y="377">1</text><text x="1370" y="407">2</text><text x="1370" y="437">3</text><text x="1370" y="467">4</text></g>
+<g stroke="#1d2330" stroke-width="3" fill="none"><path d="M1392,373 H1450"/><path d="M1392,403 H1450"/><path d="M1392,433 H1450"/><path d="M1392,463 H1450"/></g>
+<rect x="1450" y="330" width="160" height="180" rx="10" fill="#eef1f5" stroke="#1d2330" stroke-width="2"/>
+<text x="1530" y="320" text-anchor="middle" font-weight="650" font-size="17">NEMA 17</text>
+<g stroke="#1d2330" stroke-width="2.5" fill="none">
+<path d="M1450,373 H1480 V378 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 V403 H1450"/>
+<path d="M1450,433 H1480 V438 a6,6 0 0 1 0,12 a6,6 0 0 1 0,12 V463 H1450"/>
+</g>
+<text x="1498" y="394" font-size="14">coil A</text><text x="1498" y="454" font-size="14">coil B</text>
+<text x="1530" y="494" text-anchor="middle" font-size="12" fill="#5a6272">1–2 and 3–4: a few Ω</text>
+<text x="1530" y="545" text-anchor="middle" font-size="13" fill="#c0392b">never plug or unplug</text>
+<text x="1530" y="562" text-anchor="middle" font-size="13" fill="#c0392b">with the power bank on</text>
+
+<!-- KEY buttons -->
+<g stroke="#1d2330" stroke-width="2"><path d="M850,620 V650"/><path d="M925,620 V650"/><path d="M1000,620 V650"/></g>
+<use href="#sw" x="850" y="650"/><use href="#sw" x="925" y="650"/><use href="#sw" x="1000" y="650"/>
+<g font-size="14" font-weight="650"><text x="796" y="700">KEY1</text><text x="871" y="700">KEY2</text><text x="946" y="700">KEY3</text></g>
+<text x="800" y="752" font-size="12" fill="#5a6272">100 kΩ pull-ups on the board</text>
+
+<!-- IO0 / RST -->
+<path d="M1170,640 V650" stroke="#1d2330" stroke-width="2"/><use href="#sw" x="1170" y="650"/>
+<path d="M1250,640 V650" stroke="#1d2330" stroke-width="2"/><use href="#sw" x="1250" y="650"/>
+<text x="1170" y="634" text-anchor="middle" font-size="13">GPIO0</text><text x="1250" y="634" text-anchor="middle" font-size="13">EN</text>
+<g font-size="14" font-weight="650"><text x="1187" y="700">IO0</text><text x="1267" y="700">RST</text></g>
+<text x="1160" y="610" font-size="12" fill="#5a6272">first upload only (toothpick)</text>
+
+<!-- P3 -->
+<rect x="1080" y="752" width="270" height="40" rx="4" fill="#fff" stroke="#1d2330" stroke-width="2"/>
+<text x="1072" y="777" text-anchor="end" font-weight="650" font-size="14">P3</text>
+<g font-size="12" text-anchor="middle"><text x="1102" y="777">1 TX</text><text x="1147" y="777">2 RX</text><text x="1192" y="777">3 IO0</text><text x="1237" y="777">4 EN</text><text x="1282" y="777">5 GND</text><text x="1327" y="777">6 3V3</text></g>
+
+<!-- push pins -->
+<g stroke="#2f7d4f" stroke-width="2" stroke-dasharray="6 5" fill="none">
+<path d="M850,860 V802" marker-end="url(#arr)"/><path d="M925,860 V802" marker-end="url(#arr)"/><path d="M1000,860 V802" marker-end="url(#arr)"/></g>
+<polygon points="838,880 862,868 862,892" fill="#2fae55"/><circle cx="925" cy="880" r="12" fill="#2fae55"/><polygon points="1012,880 988,868 988,892" fill="#2fae55"/>
+<text x="925" y="920" text-anchor="middle" font-size="14">push pins in the back plate</text>
+<text x="925" y="938" text-anchor="middle" font-size="13" fill="#5a6272">(left arrow · round · right arrow)</text>
+
+<!-- USB serial adapter -->
+<rect x="1080" y="880" width="270" height="110" rx="10" fill="#eef1f5" stroke="#1d2330" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1215" y="958" text-anchor="middle" font-weight="650" font-size="15">3.3 V USB-serial adapter</text>
+<text x="1215" y="978" text-anchor="middle" font-size="13" fill="#5a6272">first upload only, then WiFi (OTA)</text>
+<g stroke="#1d2330" stroke-width="2" fill="none">
+<path d="M1102,792 V840 L1147,860 V880"/><path d="M1147,792 V840 L1102,860 V880"/><path d="M1282,792 V880"/>
+<path d="M1327,792 V830"/></g>
+<g font-size="12" text-anchor="middle"><text x="1102" y="900">RX</text><text x="1147" y="900">TX</text><text x="1282" y="900">GND</text></g>
+<g stroke="#c0392b" stroke-width="3"><path d="M1318,830 L1336,848"/><path d="M1336,830 L1318,848"/></g>
+<text x="1346" y="845" font-size="13" fill="#c0392b">leave empty</text>
+
+<!-- rules -->
+<rect x="40" y="430" width="620" height="300" rx="10" fill="#fbfbfc" stroke="#dde1e8"/>
+<text x="60" y="464" font-weight="650" font-size="17">Power rules</text>
+<g font-size="14.5">
+<text x="60" y="496">• The T-Motor is powered <tspan font-weight="650">only</tspan> through P1, from the PD trigger.</text>
+<text x="60" y="522">• Never feed 3.3 V into P3 hole 6: two regulators would fight.</text>
+<text x="60" y="548">• Upload: power bank first, then the USB-serial adapter.</text>
+<text x="75" y="570">Switching off: the other way round.</text>
+<text x="60" y="596">• Motor unplugged while uploading over P3.</text>
+<text x="60" y="622">• Never plug or unplug the motor with VM on.</text>
+<text x="60" y="648">• Check the polarity of the P1 cable before the first power-up:</text>
+<text x="75" y="670">+9 V on P1 pin 1, GND on P1 pin 2.</text>
+<text x="60" y="696">• GPIO34/35/36 are input-only; the board has the pull-ups.</text>
+</g>
+<text x="40" y="1020" font-size="12" fill="#9aa3b0">Pin numbers per the LilyGO T-Motor schematic and measurements on the board. Driver address 3 = DIP switches in factory position.</text>
+</svg>

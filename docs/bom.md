@@ -8,7 +8,8 @@
 | 1 | **NEMA 17 stepper**, 1.8°, 40 mm long | used: Wantai 42BYGHW609, 0.42 Nm at 1.7 A, ~1.5 Ω per coil. Any 42 × 40 mm motor with a 22 mm centring collar and M3 holes at 31 mm pitch fits |
 | 1 | GT2 pulley, **20 teeth**, 6 mm belt, bore for the motor shaft (5 mm) | |
 | 1 | GT2 closed belt, **6 mm wide, 158 mm** (79 teeth) | |
-| 1 | USB-C PD trigger board, **fixed 9 V** | used: TinyTronics 006497. The screw terminal is desoldered; its wires go to the T-Motor P1 cable |
+| 1 | USB-C PD trigger board, **fixed 9 V** | used: TinyTronics 006497, pads 9V + PD ONLY bridged. The screw terminal is desoldered to save height |
+| 1 | P1 cable with plug (comes with the T-Motor) | cut off and soldered to the PD trigger; only wires 1 (+VM) and 2 (GND) are used |
 | 1 | USB-C PD power bank that supplies 9 V | plus a USB-C cable |
 
 ## Printed parts

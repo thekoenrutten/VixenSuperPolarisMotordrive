@@ -6,6 +6,8 @@ each orientation was chosen so the part prints without supports. Textured PEI pl
 Tested on a Bambu Lab P1S in **black PLA Matte** (black also stops the PD trigger's LED shining through).
 A final print in PETG-CF is planned but not yet tested; see "Other filaments" below.
 
+![All printed parts in their print orientation](img/printed_parts.png)
+
 | File | Orientation | Layer | Walls | Infill |
 |---|---|---|---|---|
 | `chassis.stl` | on its side, worm side on the bed | 0.20 | 4 | 15 % |

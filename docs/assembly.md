@@ -11,8 +11,10 @@ On the mount, keep the **RA axis** and the **dec axis** apart: this drive goes o
 1. Press the heat-set inserts in: 2 in the back of the chassis, 3 in the shell (2 at the front, 1 at the back).
 2. Check the motor with a multimeter: pins 1-2 and pins 3-4 of its plug must each be one coil (a few ohms),
    and there must be no connection between the two pairs.
-3. Prepare the PD trigger: desolder its screw terminal and solder its + and − wires to the T-Motor's **P1** cable
-   (P1 pin 1 = +VM, pin 2 = GND). Check the polarity with the multimeter before connecting anything.
+3. Prepare the PD trigger: desolder its screw terminal, cut the plug of the **P1 cable that comes with the T-Motor**
+   off with a few centimetres of wire, and solder wire 1 (+VM) to the PD trigger's + and wire 2 (GND) to −.
+   Insulate wires 3–6. Check +9 V between pin 1 and pin 2 with the multimeter before plugging it into the T-Motor.
+   See the [wiring diagram](electronics-firmware.md#wiring).
 4. Flash the firmware once (see [electronics-firmware.md](electronics-firmware.md)). After that, updates go over WiFi.
 
 ## 2. Housing

@@ -65,9 +65,11 @@ GitHub shows STL files as an interactive 3D view: click any file in `stl/` to lo
 
 ## Building one
 
+![All printed parts](docs/img/printed_parts.png)
+
 1. Get the parts in the [bill of materials](docs/bom.md).
 2. [Print](docs/printing.md) the housing, push pins and pulley. Print the bore test strip first in your own filament.
-3. Flash the [firmware](docs/electronics-firmware.md) over USB once; later updates go over WiFi.
+3. Wire it up following the [wiring diagram](docs/electronics-firmware.md#wiring) and flash the [firmware](docs/electronics-firmware.md) once over a USB-serial adapter; later updates go over WiFi.
 4. [Assemble](docs/assembly.md) the housing and fit it to the mount.
 
 ## Will it fit my mount?

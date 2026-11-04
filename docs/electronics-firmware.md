@@ -2,12 +2,21 @@
 
 ## Wiring
 
+![Wiring diagram](img/wiring.png)
+
+*Editable source: [`img/wiring.svg`](img/wiring.svg).*
+
 ```
 USB-C power bank → PD trigger (fixed 9 V) → T-Motor P1 (pin 1 +VM, pin 2 GND)
                                                ├─ TMC2209 → motor JST → NEMA 17
                                                └─ on-board buck → 3.3 V → ESP32-PICO-D4
 Buttons on the board: KEY1 (GPIO36), KEY2 (GPIO34), KEY3 (GPIO35), pull-ups on the board
 ```
+
+**PD trigger to P1.** The T-Motor comes with a cable for its 6-pin P1 connector. Cut the plug off with a few
+centimetres of wire, solder wire 1 to the PD trigger's **+** and wire 2 to **−** (on the pads where the screw terminal
+was), and cut wires 3–6 short and insulate them. Bridge the **9V** and **PD ONLY** pads on the PD trigger so it always
+asks for 9 V. Before plugging into the T-Motor: power bank on, meter on V DC, and check +9 V on P1 pin 1 against pin 2.
 
 No other soldering on the T-Motor is needed. The three buttons are pressed through the back plate by the push pins.
 
